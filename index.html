@@ -94,6 +94,22 @@
             padding-bottom: 40px;
         }
 
+        /* Profil Fotoğrafı */
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid rgba(56, 189, 248, 0.5);
+            box-shadow: 0 0 30px var(--accent-glow);
+            margin-bottom: 30px;
+            animation: float 6s ease-in-out infinite;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        .profile-photo:hover { filter: grayscale(0%); }
+
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-10px); }
@@ -311,8 +327,10 @@
                 <div class="pulse-circle c3"></div>
             </div>
 
-
-            <h1> AI Research Engineer at Huawei</h1>
+            <!-- PROFILE PHOTO -->
+            <img src="image/img_ekulgen.jpg" alt="Dr. Eyüp Kaan Ülgen" class="profile-photo">
+            
+            <h2> AI Research Engineer at Huawei</h2>
             
             <!-- Typewriter Text -->
             <div class="typewriter" id="typewriter-text"></div>
