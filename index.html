@@ -46,7 +46,7 @@
 
         /* Container */
         .container {
-            max-width: 850px; /* Slightly narrower for better reading experience */
+            max-width: 800px; /* Okuma kolaylığı için biraz daha dar */
             margin: 0 auto;
             padding: 0 24px;
             width: 100%;
@@ -81,6 +81,7 @@
 
         .social-links a:hover {
             color: var(--accent-color);
+            transform: translateY(-2px);
         }
 
         /* Hero Section */
@@ -90,7 +91,7 @@
         }
 
         .hero h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             font-weight: 700;
             margin-bottom: 12px;
             letter-spacing: -0.02em;
@@ -121,7 +122,7 @@
             border-left: 2px solid var(--accent-color);
             padding-left: 15px;
             margin-bottom: 60px;
-            opacity: 0.8;
+            opacity: 0.7;
         }
 
         /* Sections General */
@@ -133,6 +134,7 @@
             font-weight: 600;
             margin-bottom: 25px;
             display: block;
+            margin-top: 40px;
         }
 
         /* Grid */
@@ -140,7 +142,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
-            margin-bottom: 80px;
+            margin-bottom: 60px;
         }
 
         .card {
@@ -230,7 +232,6 @@
 
         .more-link {
             display: inline-block;
-            margin-top: 10px;
             color: var(--accent-color);
             text-decoration: none;
             font-size: 0.9rem;
@@ -287,11 +288,11 @@
             
             <p class="bio">
                 PhD in Astronomy and Space Science from Istanbul University. 
-                Applying scientific rigor to artificial intelligence, with a focus on blending astrophysical data analysis experience with modern engineering.
+                Currently working on AI research, with a particular interest in Recommender Systems and Large Language Models.
             </p>
 
             <div class="tagline">
-                "Passionate about building intelligent systems that blend research and data-driven reasoning."
+                "I’m passionate about building intelligent systems that blend research and data-driven reasoning."
             </div>
 
             <!-- Focus Areas -->
@@ -304,22 +305,22 @@
 
                 <div class="card">
                     <h3><i class="fas fa-brain"></i> LLMs & RAG</h3>
-                    <p>Exploring Large Language Models and Retrieval-Augmented Generation architectures for information retrieval.</p>
+                    <p>Exploring Large Language Models and Retrieval-Augmented Generation architectures.</p>
                 </div>
 
                 <div class="card">
                     <h3><i class="fas fa-layer-group"></i> ML & Deep Learning</h3>
-                    <p>Developing machine learning models with a focus on deep learning techniques and practical implementations.</p>
+                    <p>Developing machine learning models with a focus on deep learning techniques.</p>
                 </div>
 
                 <div class="card">
-                    <h3><i class="fas fa-eye"></i> NLP & Computer Vision</h3>
+                    <h3><i class="fas fa-eye"></i> NLP & Vision</h3>
                     <p>Conducting research on processing text and image data using various NLP and Computer Vision methods.</p>
                 </div>
 
                 <div class="card">
                     <h3><i class="fas fa-star"></i> Astrophysical Data</h3>
-                    <p>Background in analyzing astronomical datasets and utilizing big data tools for scientific research.</p>
+                    <p>Analyzing astronomical datasets and utilizing big data tools for scientific research.</p>
                 </div>
             </div>
 
@@ -327,7 +328,8 @@
             <span class="section-title">Recent Writings</span>
             <div class="writing-list">
                 
-                <a href="https://medium.com/@k.ulgen90" target="_blank" class="article-link">
+                <!-- RAG 201 - User Provided Link -->
+                <a href="https://medium.com/@k.ulgen90/retrieval-augmented-generation-rag-201-naive-advanced-ve-modular-rag-d314ea0a3d6f" target="_blank" class="article-link">
                     <div class="article-content">
                         <span class="article-title">RAG — 201: Naive, Advanced ve Modular RAG</span>
                         <span class="article-meta">Veri Üzerine Düşünceler #9</span>
@@ -335,7 +337,8 @@
                     <i class="fas fa-external-link-alt article-icon"></i>
                 </a>
 
-                <a href="https://medium.com/@k.ulgen90" target="_blank" class="article-link">
+                <!-- CRAG -->
+                <a href="https://medium.com/@k.ulgen90/corrective-retrieval-augmented-generation-crag-mimarisi-3b78da89f84b" target="_blank" class="article-link">
                     <div class="article-content">
                         <span class="article-title">Corrective Retrieval Augmented Generation (CRAG)</span>
                         <span class="article-meta">Veri Üzerine Düşünceler #8</span>
@@ -343,7 +346,8 @@
                     <i class="fas fa-external-link-alt article-icon"></i>
                 </a>
 
-                <a href="https://medium.com/@k.ulgen90" target="_blank" class="article-link">
+                <!-- Self-RAG -->
+                <a href="https://medium.com/@k.ulgen90/self-reflective-retrieval-augmented-generation-self-rag-mimarisi-3fcca9fed706" target="_blank" class="article-link">
                     <div class="article-content">
                         <span class="article-title">Self-Reflective Retrieval-Augmented Generation (Self-RAG)</span>
                         <span class="article-meta">Veri Üzerine Düşünceler #7</span>
@@ -351,7 +355,8 @@
                     <i class="fas fa-external-link-alt article-icon"></i>
                 </a>
 
-                <a href="https://medium.com/@k.ulgen90" target="_blank" class="article-link">
+                <!-- CIA Factbook -->
+                <a href="https://medium.com/@k.ulgen90/retrieval-augmented-generation-cia-factbook-ile-do%C4%9Frulanabilir-soru-cevap-sistemi-c7ed19f9e666" target="_blank" class="article-link">
                     <div class="article-content">
                         <span class="article-title">Building a Verifiable QA System with CIA Factbook</span>
                         <span class="article-meta">Thoughts on Data #6</span>
@@ -359,7 +364,8 @@
                     <i class="fas fa-external-link-alt article-icon"></i>
                 </a>
 
-                <a href="https://medium.com/@k.ulgen90" target="_blank" class="article-link">
+                <!-- Agents 101 -->
+                <a href="https://medium.com/@k.ulgen90/ajanlar-agents-101-1321c4e51e36" target="_blank" class="article-link">
                     <div class="article-content">
                         <span class="article-title">Ajanlar (Agents) — 101</span>
                         <span class="article-meta">Veri Üzerine Düşünceler #5</span>
